@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../imagenes/logo.png';
-import './EstiloLogo.css';
+import './Logo.css';
 
 const Logo = () => {
     return (
