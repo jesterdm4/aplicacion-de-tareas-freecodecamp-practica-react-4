@@ -1,7 +1,8 @@
 import './App.css';
+import ListaDeTareas from './componentes/listaDeTareas/ListaDeTareas.jsx';
 import Logo from './componentes/logo/Logo.jsx';
-import Tarea from './componentes/tarea/Tarea.jsx';
-//tratar de convertir tarea-lista-principal en un componente
+//import Tarea from './componentes/tarea/Tarea.jsx';
+
 
 function App() {
     return (
@@ -9,7 +10,7 @@ function App() {
             <Logo />
             <div className="tareas-lista-principal">
                 <h1>Mis tareas</h1>
-                <Tarea texto="Hacer el curso de React" />
+                <ListaDeTareas />
             </div>
         </div>
     );

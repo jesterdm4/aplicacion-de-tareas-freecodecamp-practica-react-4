@@ -1,0 +1,18 @@
+.tareas-lista-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+
+/*
+cuidado con flex direction column, puede ser que necesite 
+ahi es flex-wrap: wrap;
+
+cuidadotambien con align-items: center, puede ser que 
+necesite quitarse
+
+*/
