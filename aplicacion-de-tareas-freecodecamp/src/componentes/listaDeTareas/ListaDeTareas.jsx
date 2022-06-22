@@ -14,17 +14,17 @@ const ListaDeTareas = (props) => {
             setTareas(tareasActualizadas); 
         }
     }
-
+    
     return (
         <>
-            <TareaFormulario addTask={(tareaNueva) => agregarTarea(tareaNueva)}/>
+            <TareaFormulario addTask={(tareaNueva) => agregarTarea(tareaNueva)}/> 
             <div className="tareas-lista-contenedor">
                 {
                     tareas.map((tarea) => 
                     {
                         return (
                             <Tarea 
-                            key={tarea.id}
+                            key={tarea.id} //que significa el valor key??
                             id={tarea.id}
                             texto={tarea.texto}
                             completada={tarea.completada}

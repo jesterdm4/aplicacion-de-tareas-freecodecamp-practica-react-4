@@ -14,19 +14,19 @@ const TareaFormulario = (props) => {
     const manejarEnvio = (e) => {
         e.preventDefault();
 
-         const tareaNueva = {
+        const tareaNueva = {
             id: uuidv4(),
             texto: name,
             completada: false
-         }
+        }
 
-         props.addTask(tareaNueva); 
+        props.addTask(tareaNueva); 
     }
 
     return (
         <form 
-        onSubmit={manejarEnvio} 
-        className="tarea-formulario">
+            onSubmit={manejarEnvio} 
+            className="tarea-formulario">
             <input 
                 className="tarea-input"
                 type="text"
