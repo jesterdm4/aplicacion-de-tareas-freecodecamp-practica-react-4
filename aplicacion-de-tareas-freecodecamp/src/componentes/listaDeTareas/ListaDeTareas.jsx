@@ -14,6 +14,23 @@ const ListaDeTareas = (props) => {
             setTareas(tareasActualizadas); 
         }
     }
+
+    const eliminarTarea = id => {
+        const tareasActualizadas = tareas.filter(tarea => tarea.id !== id);
+        setTareas(tareasActualizadas);
+    }
+
+    const completarTarea = id => {
+        const tareasActualizadas = tareas.map(tarea => {
+            if (tarea.id === id) {//no entioendo esto de igual al id, cual id?
+                tarea.completada = !tarea.completada;
+            }
+
+            return tarea;
+
+        });
+         setTareas(tareasActualizadas);
+    }
     
     return (
         <>
@@ -28,6 +45,8 @@ const ListaDeTareas = (props) => {
                             id={tarea.id}
                             texto={tarea.texto}
                             completada={tarea.completada}
+                            eliminarTarea ={eliminarTarea}//porque esto debe asignarse como prop? es esto un callback?
+                            completarTarea ={completarTarea}//porque esto debe asignarse como prop? es esto un callback?
                             />
                         );
                     }
